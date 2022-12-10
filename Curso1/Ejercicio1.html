@@ -94,9 +94,35 @@
             saltarlinea();
 
         }
+        function imprimirT(frase){
+            saltarlinea();
+            document.write("<h2>"+frase+"</h2>");
+            saltarlinea();
+        }
         imprimir("Hola");
         imprimir("Nombres: "+ nPaula + " y "+ nXimena);
-        //
+        
+        //Calculando IMC
+        function calcularIMC(peso, altura){
+           imc = peso/(altura*altura);
+           return imc
+        }
+        imprimirT("Calculando IMC con funciones");
+        pesoCris= 71
+        alturaCris=1.72
+        imcCris = calcularIMC(pesoCris, alturaCris);
+        //imcCris= pesoCris/(alturaCris*alturaCris)
+        imprimir("El IMC de Cris es: "+imcCris);
+
+        // Interactuar con el Usuario
+        //prompt("Informe su peso")
+        imprimirT("Interactuar con el Usuario");
+
+        var nombre = prompt("¿Cual es su nombre?")
+        var pesoU = prompt(nombre+" ¿Cual es su peso?")
+        var alturaU = prompt(nombre+" ¿Cual es su Altura?")
+        imcU = calcularIMC(pesoU, alturaU)
+        imprimir("El IMC de "+nombre+" es: "+imcU);
 
     </script>
 </body>
