@@ -15,7 +15,8 @@
     Javascript
     <br>
     <script>
-
+        var year = 2022;
+        var salto = "<br>";
         document.write("La edad de Christian es ... <br>");
         document.write("? <br>");
         document.write(25);
@@ -35,7 +36,68 @@
         document.write("<br>");
         document.write("La suma es ..." +(25+32+17));
         document.write("<br>");
-        
+        document.write("La edad de Juan " +(year-2000)+ " años");
+        document.write("<br>");
+        document.write(year);
+        document.write("<br>");
+
+        year = 2050;
+        document.write("Ximena tiene: " +(year-2010)+ " años");
+        document.write("<br>");
+        document.write("Paula tiene: " +(year-2015)+ " años");
+        document.write("<br>");
+        document.write("Promedio: " +(40+35)/2+ " años");
+        document.write("<br>");
+
+        var edadPaula = 35;
+        var edadXimena = 40;
+        var nPaula = "Paula";
+        var nXimena = "Ximena";
+        promedio = (40+35)/2
+
+        document.write("Promedio: " + Math.round(promedio)+ " años");
+        document.write("<br>");
+
+        promedio = (edadPaula+edadXimena)/2
+
+        document.write("Promedio Variables: " + Math.round(promedio)+ " años");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("Nombres: "+ nPaula + " y "+ nXimena);
+        document.write("<br>");
+        document.write(salto);
+
+        var edad1 = 10;
+        var edad2 = "20";
+        var edad3 = 12;
+        document.write("La media de las edades es <br>");
+        document.write( (edad1 + edad2 + edad3) / 3);
+        document.write(salto);
+
+        //Funciones
+        // document.write y alert son funciones por defecto
+        // Función de salto de línea saltarlinea();
+        function saltarlinea(){
+
+            document.write("<br>");
+
+        }
+        saltarlinea();
+        document.write("Practica de Funciones");
+        saltarlinea();
+        document.write("Salto");
+        saltarlinea();
+        //Funciones con parámetros
+        function imprimir(frase){
+
+            document.write(frase);
+            saltarlinea();
+
+        }
+        imprimir("Hola");
+        imprimir("Nombres: "+ nPaula + " y "+ nXimena);
+        //
+
     </script>
 </body>
 </html>

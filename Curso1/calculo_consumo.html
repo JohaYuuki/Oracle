@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Alcohol o gasolina?</title>
+</head>
+<body>
+    <h3>¿Alcohol o gasolina?</h3>
+    <br>
+    <script>
+        var tanque = 40;
+        var recorridoT = 480;
+        var recorridoA = 300;
+        var eficiencia = 0;
+        document.write("Usando gasolina y consumiendo todo el tanque se hace un recorrido de 480 kilómetros. ¿Cuál es la eficiencia del carro usando gasolina? o sea, ¿cuántos kilómetros recorre el carro por cada litro de gasolina?");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("Datos: <br> Tanque = "+tanque+" litros. <br> Recorrido con Gasolina: "+recorridoT+" KM. <br> Recorrido con Alcohol: "+recorridoA+" KM. <br>");
+        eficiencia=recorridoT/tanque
+        document.write("La eficiencia es: " +eficiencia+". <br>");
+        document.write("<br>");
+        document.write("Por otro lado, si el carro usa alcohol como combustible, el mismo tanque de 40 litros hace un recorrido de 300 kilómetros. ¿Cuál es el la eficiencia del carro usando alcohol?. <br>");
+        document.write("<br>");
+        eficiencia=recorridoA/tanque
+        document.write("La eficiencia con alcohol es: " +eficiencia+". <br>");
+    </script>
+</body>
+</html>
