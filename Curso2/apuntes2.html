@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes 2</title>
+</head>
+<body>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+        }
+        function printT(texto){
+            saltarLinea();
+            document.write("<h2>"+texto+"</h2>");
+            saltarLinea();
+        }
+        function print(texto){
+            saltarLinea();
+            document.write(texto);
+            saltarLinea();
+        }
+
+        printT("Mientras que");
+        var yearMundial = 1930;
+        var limite = parseInt(prompt("Ingrese un Año: "));
+
+        while (yearMundial<=limite) {
+
+            print("Hubo Mundial de la FIFA en el año: "+ yearMundial);
+            yearMundial = yearMundial+4;
+
+        }
+        print("FIN");
+
+        printT("Tablas de Multiplicar - Loop");
+        print("WHILE");
+        var mult=1
+        while (mult <=10) {
+            print(5*mult);
+            mult++;
+        }
+        print("FOR");
+        for (let i = 1; i <= 10; i++) {
+            print(5*i);        
+        }
+    </script>
+</body>
+</html>

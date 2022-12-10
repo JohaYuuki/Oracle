@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes 3</title>
+</head>
+<body>
+    <input>
+    <button>Verificar</button>
+    <script>
+        var secreto=5;
+        var input= document.querySelector("input");
+        function verificar() {
+            if (parseInt(input.value) == secreto) {
+                alert("Acertó");
+            } else{
+                alert("Falló");
+            }
+        }
+         var button = document.querySelector("button"); 
+         button.onclick = verificar;
+    </script>
+</body>
+</html>
