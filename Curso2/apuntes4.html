@@ -11,7 +11,35 @@
     <button>Verificar</button>
     <script>
         //var secreto=Math.round(Math.random()*10);
-        var secretos = [3,5,7,9];
+        //secretos.push(3); //grabar nuevos valores al array
+        //secretos.push(Math.round(Math.random()*10)); //pasarle aleatorios
+        function aleatorio(){
+            return Math.round(Math.random()*10);
+        }
+        //secretos.push(aleatorio());
+        function sortear(cantidad){
+            var secretos = [];
+            var cont=1;
+            while (cont <=cantidad) {
+                numAlt=aleatorio();
+                var band=false;
+                if (numAlt != 0){ //validar que no sea 0
+                    for (let i = 0; i < secretos.length; i++) { //validar números repetidos
+                        if(numAlt==secretos[i]){
+                            band = true;
+                            break;
+                        }
+                    }
+                    if (band==false) {
+                        secretos.push(numAlt);
+                        cont++;
+                    }
+                }
+            }
+            return secretos;
+        }
+        var secretos=sortear(4);
+        console.log(secretos);
         var input= document.querySelector("input");
         input.focus(); //Cursor en esta casilla
         function verificar() {
